@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ig {
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: auto;
+            border: 6px solid black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <img id="ig" class="ig"
+        src="https://cdn.vectorstock.com/i/preview-1x/15/40/blank-profile-picture-image-holder-with-a-crown-vector-42411540.jpg"
+        alt="">
+    <input id="fl" type="file">
+
+    <button onclick="add()">Add profile</button>
+
+    <script>
+        let fll = document.getElementById("fl")[0].value;
+
+        function add() {
+
+            document.getElementById("ig").setAttribute("src", "fll");
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ig {
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: auto;
+            border: 6px solid black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <img id="ig2" class="ig"
+        src="https://cdn.vectorstock.com/i/preview-1x/15/40/blank-profile-picture-image-holder-with-a-crown-vector-42411540.jpg"
+        alt="">
+    <button onclick="add2()">add profile</button>
+
+    <script>
+        function add2() {
+            let u = prompt("add profile")
+            document.getElementById("ig2").setAttribute("src", u);
+        }
+    </script>
+
+</body>
+
+</html>
